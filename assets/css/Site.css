@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body{
+    background-color: #0f1322;
+}
+
+.grid_header_container{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+
+.line1{
+    font-family: "Kanit", sans-serif;
+    font-size: 25px;
+    background-color: #2d3b55;
+    display: flex;
+    flex-direction: column;
+    margin-top: -130px;
+    height: 150px;
+    color : white;
+}
+
+.column1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-right: 2%;
+}
+
+
+
+.ButtonsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: -15px;
+}
+
+
+
+
+
+
+.line2{
+    background-color: #ACABAB;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 150px;
+}
+
+
+.button-17 {
+    font-family: "Kanit", sans-serif;
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-size: 18px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 100ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+
+}
+
+.button-17:hover {
+    background: #c3d7fc;
+    color: #000000;
+}
+
+.button-17:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+    color: black;
+}
+
+.button-17:focus {
+    outline: none;
+    border: 2px solid #000000;
+    background-color: #c3d7fc;
+    color: black;
+}
+
+.button-17:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-17:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-17:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+
+
+.card_container {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-top: 15px;
+    background-color: #47659a;
+    color: white;
+    height: 300px;
+}
+
+.card_container2 {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-top: 15px;
+    background-color: #81a5e4;
+    color: white;
+    height: 300px;
+}
+
+.card_container_container{
+    
+    margin-top: -55px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    gap: 10px; 
+    padding: 10px;
+}
+
+.card_title{
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenueTextContainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: white;
+}
+
+.bienvenueText{
+    font-family: "Kanit", sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+
+.imageMoi{
+    width: 60px;
+    position: fixed;
+    right: 1%;
+    top: 2%;
+    border: 2px solid black;
+    background-color: #F2F0F0;
+    border-radius: 50px;
+}
+
+.imageXp{
+    margin-left: -15px;
+    width: 80%;
+}
+
+.imageBoutonValide{
+    width:100%;
+    transition: transform 0.3s ease;
+}
+
+.imageProjInfo{
+    width: 175px;
+    height: 175px;
+    border: 2px solid black;
+    background-color: #F2F0F0;
+    border-radius: 300px;
+    margin-bottom: 10%;
+}
+
+.imageProjPro{
+    width: 200px;
+    height: 200px;
+}
+
+.image_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageBoutonValide:hover{
+    transform: scale(1.2);
+}
+

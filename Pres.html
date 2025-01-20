@@ -1,0 +1,72 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PorteFolio</title>
+    <link rel="stylesheet" href="assets/css/Site.css">
+    <link rel="stylesheet" href="assets/css/Pres.css">
+    <script src="assets/js/app.js"></script>
+</head>
+<body>
+    <a class="profil"><img class="imageMoi" src="icons/Moi.png"></a>
+    <header>
+        <div class="grid_header_container">
+            <div class="line1">
+                <div class="column1">
+                    <h1 class="Title">Mon Portefolio</h1>
+                    <div class="ButtonsContainer">
+                        <button id="Presentation" class="button-17" onclick="redirect(this)">Accueil</button>
+                        <button id="expePro" class="button-17" onclick="redirect(this)">Expériences Pros</button>
+                        <button id="ProjInfo" class="button-17" onclick="redirect(this)">Projets informatiques</button>
+                        <button id="Competences" class="button-17" onclick="redirect(this)">Compétences</button>
+                        <button id="ProjPerso" class="button-17" onclick="redirect(this)">Projets futurs</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="TexteBienvenuePres">Bienvenue sur mon Portefolio</h1>
+        <p class="TexteBienvenue">Bonjour, je me présente, je m'appelle Arthur MILLET j'ai 22 ans. Je suis actuellement étudiant en BUT informatique à l'IUT de Nantes. Sur ce Portefolio, vous pourrez retrouver mes expériences professionnelles, des projets informatiques que j'ai eu l'occasion de réaliser. Vous pourrez également avoir un apercu des projets pros et persos que j'aimerais réaliser dans le futur.</p>
+    </div>
+    <div class="wave-crescent"></div>
+    <div class="wave-crescent3"></div>
+    <div class="wave-crescent2"></div>
+    <div class="wave-crescent4"></div>
+    <div class="wave-crescent5"></div>
+    <div class="wave-crescent6"></div>
+   
+    
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2 class="Profil">Profil</h2>
+            <div class="profile-info">
+                <p><strong>Nom:</strong> Arthur MILLET</p>
+                <p><strong>Âge:</strong> 22 ans</p>
+                <p><strong>Occupation:</strong> Étudiant en BUT informatique</p>
+                <p><strong>Loisirs:</strong></p>
+                <div class="passions">
+                    <img class="passion-image" src="icons/foot.jpg" alt="Passion 1" data-video="icons/videoFoot.mp4">
+                    <img class="passion-image" src="icons/devImage.jfif">
+                    <img class="passion-image" src="icons/dessinImage.jpg" alt="Passion 3">
+                </div>
+                <br>
+                <a href="https://www.youtube.com/watch?v=DMeLiPu9Ds8">En apprendre plus sur moi</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="passionVideo" controls>
+                <source src="" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>

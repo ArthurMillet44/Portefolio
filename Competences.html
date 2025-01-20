@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes Compétences</title>
+    <link rel="stylesheet" href="assets/css/Site.css">
+    <link rel="stylesheet" href="assets/css/Pres.css">
+    <script src="assets/js/app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            margin-top: 70px;
+        }
+
+        .skill-category {
+            margin-bottom: 40px;
+        }
+
+        .skill-category h2 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .progress-bar {
+            position: relative;
+            width: 100%;
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #003366;
+        }
+
+        .progress-bar[data-level="beginner"]::after {
+            width: 25%;
+        }
+
+        .progress-bar[data-level="intermediate"]::after {
+            width: 50%;
+        }
+
+        .progress-bar[data-level="advanced"]::after {
+            width: 75%;
+        }
+
+        .progress-bar[data-level="expert"]::after {
+            width: 100%;
+        }
+
+        .imageMoi{
+            display: none;
+        }
+
+         
+    </style>
+</head>
+<body>
+    <header>
+        <a class="profil"><img class="imageMoi" src="icons/Moi.png"></a>
+        <div class="grid_header_container">
+            <div class="line1">
+                <div class="column1">
+                    <h1 class="Title">Mes Compétences</h1>
+                    <div class="ButtonsContainer">
+                        <button id="Presentation" class="button-17" onclick="redirect(this)">Accueil</button>
+                        <button id="expePro" class="button-17" onclick="redirect(this)">Expériences Pros</button>
+                        <button id="ProjInfo" class="button-17" onclick="redirect(this)">Projets informatiques</button>
+                        <button id="Competences" class="button-17" onclick="redirect(this)">Compétences</button>
+                        <button id="ProjPerso" class="button-17" onclick="redirect(this)">Projets futurs</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Catégorie de compétences -->
+        <div class="skill-category">
+            <h2>Langages de programmation</h2>
+
+            <div class="skill">
+                <div class="skill-name">HTML/CSS</div>
+                <div class="progress-bar" data-level="advanced"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="progress-bar" data-level="advanced"></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Kotlin/Java</div>
+                <div class="progress-bar" data-level="advanced"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">SQL</div>
+                <div class="progress-bar" data-level="advanced"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Windows Powershell</div>
+                <div class="progress-bar" data-level="advanced"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress-bar" data-level="intermediate"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">GO</div>
+                <div class="progress-bar" data-level="intermediate"></div>
+            </div>
+        </div>
+
+        <!-- Catégorie de compétences -->
+        <div class="skill-category">
+            <h2>Outils</h2>
+            <div class="skill">
+                <div class="skill-name">VsCode/InteliJ</div>
+                <div class="progress-bar" data-level="expert"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Android Studio</div>
+                <div class="progress-bar" data-level="advanced"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Git</div>
+                <div class="progress-bar" data-level="advanced"></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Talend</div>
+                <div class="progress-bar" data-level="intermediate"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Azure DevOps</div>
+                <div class="progress-bar" data-level="beginner"></div>
+            </div>
+            
+        </div>
+
+        <!-- Catégorie de compétences -->
+        <div class="skill-category">
+            <h2>Soft Skills</h2>
+
+            <div class="skill">
+                <div class="skill-name">Communication</div>
+                <div class="progress-bar" data-level="advanced"></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Gestion de projet</div>
+                <div class="progress-bar" data-level="advanced"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Travail en équipe</div>
+                <div class="progress-bar" data-level="advanced"></div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

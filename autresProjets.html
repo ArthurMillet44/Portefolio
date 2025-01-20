@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autres Projets Informatiques</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Inclure votre CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f1322;
+            color: #333;
+        }
+
+        header {
+            background-color: #2d3b55;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #fff;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-card .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(17, 37, 57, 0.8); /* Bleu foncé semi-transparent */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .project-card:hover .overlay {
+            opacity: 1;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .button-17 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: black;
+            background-color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button-17:hover {
+            background-color: #ffffff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Autres Projets Informatiques</h1>
+        <p>Découvrez d'autres réalisations effectuées durant mon temps libre. Cliquez sur un projet pour en savoir plus.</p>
+    </header>
+
+    <main>
+        <div class="project-container">
+            <!-- Exemple de projet 1 -->
+            <div class="project-card">
+                <img src="icons/siteNoel.PNG" alt="Projet 1">
+                <div class="overlay">
+                    <p>Un site web permettant de synchroniser les listes de Noël de ma famille. Le but est que tout le monde puisse ajouter sa liste sur le site et réserver des cadeaux pour les autres. </p>
+                </div>
+            </div>
+
+            <!-- Exemple de projet 2 -->
+            <div class="project-card">
+                <img src="icons/echec.png" alt="Projet 2">
+                <div class="overlay">
+                    <p>Sur mon temps libre, afin de découvrir le développement, j'avais réalisé un jeu d'échecs en Java.</p>
+                </div>
+            </div>
+
+            <!-- Exemple de projet 3 -->
+            <div class="project-card">
+                
+                <div class="overlay">
+                    <p>A suivre</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bouton pour revenir à l'accueil -->
+        <div class="button-container">
+            <a href="./Pres.html" class="button-17">Retourner à l'Accueil</a>
+        </div>
+    </main>
+</body>
+</html>
